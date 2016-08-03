@@ -1,0 +1,1064 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4C35F90-FB65-4EDB-86D3-4494A8F92A20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cop2016</RootNamespace>
+    <AssemblyName>Cop2016</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Workbench\Sites\IHA\publisher\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Cop2016/</UpdateUrl>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>COP2001.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Pics\IHA Small Logo -Words.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A3C715C0C61E58F0051B3182A59E1513D6312F60</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Cop2016_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.Microsoft.Vbe.Interop.Forms, Version=11.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\AxInterop.Microsoft.Vbe.Interop.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ADODB, Version=6.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>lib\Interop.ADODB.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ADOR, Version=6.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>lib\Interop.ADOR.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.DAO, Version=5.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>lib\Interop.DAO.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSDataGridLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>lib\Interop.MSDataGridLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSDBCtls, Version=1.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>lib\Interop.MSDBCtls.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Scripting, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>lib\Interop.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.stdformat, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="msdatasrc, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.2.503.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2016.2.503.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2016.2.503.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2016.2.503.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.SpellChecker, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2016.2.503.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2016.2.503.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2016.2.503.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Dark, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2016.2.503.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2016.2.503.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2016.2.503.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2016.2.503.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.2.503.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI.Design, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.GridView, Version=2016.2.503.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.GridView.Export, Version=2016.2.503.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Documents.Proofing.RadGridView, Version=2016.2.503.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Categories.cs" />
+    <Compile Include="DALcop.cs" />
+    <Compile Include="dlgAddFlowchartAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgAddFlowchartAction.Designer.cs">
+      <DependentUpon>dlgAddFlowchartAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgCreateCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgCreateCat.Designer.cs">
+      <DependentUpon>dlgCreateCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgField.Designer.cs">
+      <DependentUpon>dlgField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgImportLookupValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgImportLookupValues.Designer.cs">
+      <DependentUpon>dlgImportLookupValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgMeasureCreateSetLogic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgMeasureCreateSetLogic.Designer.cs">
+      <DependentUpon>dlgMeasureCreateSetLogic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgMeasureOccurGroupLogic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgMeasureOccurGroupLogic.Designer.cs">
+      <DependentUpon>dlgMeasureOccurGroupLogic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgParentFields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgParentFields.Designer.cs">
+      <DependentUpon>dlgParentFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgSyncMeasure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgSyncMeasure.Designer.cs">
+      <DependentUpon>dlgSyncMeasure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgValidationField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgValidationField.Designer.cs">
+      <DependentUpon>dlgValidationField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgValidationRightField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgValidationRightField.Designer.cs">
+      <DependentUpon>dlgValidationRightField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCMSParentAddCrit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCMSParentAddCrit.Designer.cs">
+      <DependentUpon>frmCMSParentAddCrit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDenominatorSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDenominatorSetup.Designer.cs">
+      <DependentUpon>frmDenominatorSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExportCoef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExportCoef.Designer.cs">
+      <DependentUpon>frmExportCoef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExportSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExportSetup.Designer.cs">
+      <DependentUpon>frmExportSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHospStatEditGroupField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHospStatEditGroupField.Designer.cs">
+      <DependentUpon>frmHospStatEditGroupField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHospStatEditIndicator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHospStatEditIndicator.Designer.cs">
+      <DependentUpon>frmHospStatEditIndicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHospStatSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHospStatSetup.Designer.cs">
+      <DependentUpon>frmHospStatSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportAddValidField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportAddValidField.Designer.cs">
+      <DependentUpon>frmImportAddValidField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportCopyValidation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportCopyValidation.Designer.cs">
+      <DependentUpon>frmImportCopyValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportMeasureSetFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportMeasureSetFile.Designer.cs">
+      <DependentUpon>frmImportMeasureSetFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportSelectLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportSelectLayout.Designer.cs">
+      <DependentUpon>frmImportSelectLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportSetup.Designer.cs">
+      <DependentUpon>frmImportSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicatorAddDep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIndicatorAddDep.Designer.cs">
+      <DependentUpon>frmIndicatorAddDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicatorAddToSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIndicatorAddToSet.Designer.cs">
+      <DependentUpon>frmIndicatorAddToSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicatorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIndicatorEdit.Designer.cs">
+      <DependentUpon>frmIndicatorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicatorReportSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIndicatorReportSetup.Designer.cs">
+      <DependentUpon>frmIndicatorReportSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicatorSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIndicatorSetup.Designer.cs">
+      <DependentUpon>frmIndicatorSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLookupSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLookupSetup.Designer.cs">
+      <DependentUpon>frmLookupSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterForm.Designer.cs">
+      <DependentUpon>frmMasterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureAddCritGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureAddCritGroup.Designer.cs">
+      <DependentUpon>frmMeasureAddCritGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureAddCritSubmitSubsSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureAddCritSubmitSubsSetup.Designer.cs">
+      <DependentUpon>frmMeasureAddCritSubmitSubsSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureAddtoSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureAddtoSet.Designer.cs">
+      <DependentUpon>frmMeasureAddtoSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureCopyCriteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureCopyCriteria.Designer.cs">
+      <DependentUpon>frmMeasureCopyCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureCriteriaSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureCriteriaSetup.Designer.cs">
+      <DependentUpon>frmMeasureCriteriaSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureCriteriaSubmitSubs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureCriteriaSubmitSubs.Designer.cs">
+      <DependentUpon>frmMeasureCriteriaSubmitSubs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureFieldGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureFieldGroups.Designer.cs">
+      <DependentUpon>frmMeasureFieldGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureFlowchartSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureFlowchartSetup.Designer.cs">
+      <DependentUpon>frmMeasureFlowchartSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureModifyCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureModifyCategory.Designer.cs">
+      <DependentUpon>frmMeasureModifyCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureModifyOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureModifyOperator.Designer.cs">
+      <DependentUpon>frmMeasureModifyOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureModifySecondField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureModifySecondField.Designer.cs">
+      <DependentUpon>frmMeasureModifySecondField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureModifyValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureModifyValue.Designer.cs">
+      <DependentUpon>frmMeasureModifyValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureMoveStepTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureMoveStepTo.Designer.cs">
+      <DependentUpon>frmMeasureMoveStepTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeasureSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeasureSetup.Designer.cs">
+      <DependentUpon>frmMeasureSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientFieldsExportFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientFieldsExportFormat.Designer.cs">
+      <DependentUpon>frmPatientFieldsExportFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientFieldsExportLinks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientFieldsExportLinks.Designer.cs">
+      <DependentUpon>frmPatientFieldsExportLinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientSetup.Designer.cs">
+      <DependentUpon>frmPatientSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportAddCrit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportAddCrit.Designer.cs">
+      <DependentUpon>frmReportAddCrit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportAddSumCriteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportAddSumCriteria.Designer.cs">
+      <DependentUpon>frmReportAddSumCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportCopyCriteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportCopyCriteria.Designer.cs">
+      <DependentUpon>frmReportCopyCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportCopySumCriteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportCopySumCriteria.Designer.cs">
+      <DependentUpon>frmReportCopySumCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportSetup.Designer.cs">
+      <DependentUpon>frmReportSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRiskAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRiskAdjustment.Designer.cs">
+      <DependentUpon>frmRiskAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSectionAddHospStatField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSectionAddHospStatField.Designer.cs">
+      <DependentUpon>frmSectionAddHospStatField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSectionAddPatientField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSectionAddPatientField.Designer.cs">
+      <DependentUpon>frmSectionAddPatientField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSectionEditPatientField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSectionEditPatientField.Designer.cs">
+      <DependentUpon>frmSectionEditPatientField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectDatabase.Designer.cs">
+      <DependentUpon>frmSelectDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetupSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetupSelection.Designer.cs">
+      <DependentUpon>frmSetupSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetupStateVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetupStateVersion.Designer.cs">
+      <DependentUpon>frmSetupStateVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetupVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetupVersion.Designer.cs">
+      <DependentUpon>frmSetupVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetupVersionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetupVersionEdit.Designer.cs">
+      <DependentUpon>frmSetupVersionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubmissionAddCalcCrit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubmissionAddCalcCrit.Designer.cs">
+      <DependentUpon>frmSubmissionAddCalcCrit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubmissionAddValidation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubmissionAddValidation.Designer.cs">
+      <DependentUpon>frmSubmissionAddValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubmissionColAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubmissionColAdd.Designer.cs">
+      <DependentUpon>frmSubmissionColAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubmissionCopyCriteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubmissionCopyCriteria.Designer.cs">
+      <DependentUpon>frmSubmissionCopyCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubmissionCopyCriteriaSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubmissionCopyCriteriaSet.Designer.cs">
+      <DependentUpon>frmSubmissionCopyCriteriaSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubmissionGroupAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubmissionGroupAdd.Designer.cs">
+      <DependentUpon>frmSubmissionGroupAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubmissionRowAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubmissionRowAdd.Designer.cs">
+      <DependentUpon>frmSubmissionRowAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubmissionSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubmissionSetup.Designer.cs">
+      <DependentUpon>frmSubmissionSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubmissionUpdateValidation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubmissionUpdateValidation.Designer.cs">
+      <DependentUpon>frmSubmissionUpdateValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubmissionValidCritWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubmissionValidCritWizard.Designer.cs">
+      <DependentUpon>frmSubmissionValidCritWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableActionSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableActionSetup.Designer.cs">
+      <DependentUpon>frmTableActionSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableEditField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableEditField.Designer.cs">
+      <DependentUpon>frmTableEditField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableEditLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableEditLookup.Designer.cs">
+      <DependentUpon>frmTableEditLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableFieldAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableFieldAdd.cs.Designer.cs" />
+    <Compile Include="frmTableFieldAdd.Designer.cs">
+      <DependentUpon>frmTableFieldAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableSetup.Designer.cs">
+      <DependentUpon>frmTableSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableValidationAddAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableValidationAddAction.Designer.cs">
+      <DependentUpon>frmTableValidationAddAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableValidationAddCrit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableValidationAddCrit.Designer.cs">
+      <DependentUpon>frmTableValidationAddCrit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableValidationAddMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableValidationAddMsg.Designer.cs">
+      <DependentUpon>frmTableValidationAddMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableValidationSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableValidationSetup.Designer.cs">
+      <DependentUpon>frmTableValidationSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableValidationUpdateMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableValidationUpdateMsg.Designer.cs">
+      <DependentUpon>frmTableValidationUpdateMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValidationCopyCriteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValidationCopyCriteria.Designer.cs">
+      <DependentUpon>frmValidationCopyCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValidationCopyCriteriaSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValidationCopyCriteriaSet.Designer.cs">
+      <DependentUpon>frmValidationCopyCriteriaSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerifyTimingTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerifyTimingTest.Designer.cs">
+      <DependentUpon>frmVerifyTimingTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modDBSetup.cs" />
+    <Compile Include="modDocumentation.cs" />
+    <Compile Include="modGlobal.cs" />
+    <Compile Include="modImportForCoreMeasVerify.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="RadDropBinder.cs" />
+    <Compile Include="RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadInputBox.cs" />
+    <Compile Include="UpdateSetup.cs" />
+    <EmbeddedResource Include="dlgAddFlowchartAction.resX">
+      <DependentUpon>dlgAddFlowchartAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgCreateCat.resX">
+      <DependentUpon>dlgCreateCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgField.resX">
+      <DependentUpon>dlgField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgImportLookupValues.resX">
+      <DependentUpon>dlgImportLookupValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgMeasureCreateSetLogic.resX">
+      <DependentUpon>dlgMeasureCreateSetLogic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgMeasureOccurGroupLogic.resX">
+      <DependentUpon>dlgMeasureOccurGroupLogic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgParentFields.resX">
+      <DependentUpon>dlgParentFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgSyncMeasure.resX">
+      <DependentUpon>dlgSyncMeasure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgValidationField.resX">
+      <DependentUpon>dlgValidationField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgValidationRightField.resX">
+      <DependentUpon>dlgValidationRightField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resX">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCMSParentAddCrit.resx">
+      <DependentUpon>frmCMSParentAddCrit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDenominatorSetup.resX">
+      <DependentUpon>frmDenominatorSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExportCoef.resX">
+      <DependentUpon>frmExportCoef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExportSetup.resX">
+      <DependentUpon>frmExportSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHospStatEditGroupField.resX">
+      <DependentUpon>frmHospStatEditGroupField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHospStatEditIndicator.resX">
+      <DependentUpon>frmHospStatEditIndicator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHospStatSetup.resX">
+      <DependentUpon>frmHospStatSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportAddValidField.resX">
+      <DependentUpon>frmImportAddValidField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportCopyValidation.resX">
+      <DependentUpon>frmImportCopyValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportMeasureSetFile.resx">
+      <DependentUpon>frmImportMeasureSetFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportSelectLayout.resX">
+      <DependentUpon>frmImportSelectLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportSetup.resX">
+      <DependentUpon>frmImportSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIndicatorAddDep.resX">
+      <DependentUpon>frmIndicatorAddDep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIndicatorAddToSet.resX">
+      <DependentUpon>frmIndicatorAddToSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIndicatorEdit.resX">
+      <DependentUpon>frmIndicatorEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIndicatorReportSetup.resX">
+      <DependentUpon>frmIndicatorReportSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIndicatorSetup.resX">
+      <DependentUpon>frmIndicatorSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLookupSetup.resX">
+      <DependentUpon>frmLookupSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resX">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterForm.resX">
+      <DependentUpon>frmMasterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureAddCritGroup.resX">
+      <DependentUpon>frmMeasureAddCritGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureAddCritSubmitSubsSetup.resx">
+      <DependentUpon>frmMeasureAddCritSubmitSubsSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureAddtoSet.resX">
+      <DependentUpon>frmMeasureAddtoSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureCopyCriteria.resX">
+      <DependentUpon>frmMeasureCopyCriteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureCriteriaSetup.resx">
+      <DependentUpon>frmMeasureCriteriaSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureCriteriaSubmitSubs.resX">
+      <DependentUpon>frmMeasureCriteriaSubmitSubs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureFieldGroups.resX">
+      <DependentUpon>frmMeasureFieldGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureFlowchartSetup.resX">
+      <DependentUpon>frmMeasureFlowchartSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureModifyCategory.resX">
+      <DependentUpon>frmMeasureModifyCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureModifyOperator.resX">
+      <DependentUpon>frmMeasureModifyOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureModifySecondField.resX">
+      <DependentUpon>frmMeasureModifySecondField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureModifyValue.resX">
+      <DependentUpon>frmMeasureModifyValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureMoveStepTo.resX">
+      <DependentUpon>frmMeasureMoveStepTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeasureSetup.resX">
+      <DependentUpon>frmMeasureSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientFieldsExportFormat.resX">
+      <DependentUpon>frmPatientFieldsExportFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientFieldsExportLinks.resX">
+      <DependentUpon>frmPatientFieldsExportLinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientSetup.resX">
+      <DependentUpon>frmPatientSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportAddCrit.resX">
+      <DependentUpon>frmReportAddCrit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportAddSumCriteria.resX">
+      <DependentUpon>frmReportAddSumCriteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportCopyCriteria.resX">
+      <DependentUpon>frmReportCopyCriteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportCopySumCriteria.resX">
+      <DependentUpon>frmReportCopySumCriteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportSetup.resX">
+      <DependentUpon>frmReportSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRiskAdjustment.resX">
+      <DependentUpon>frmRiskAdjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSectionAddHospStatField.resX">
+      <DependentUpon>frmSectionAddHospStatField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSectionAddPatientField.resX">
+      <DependentUpon>frmSectionAddPatientField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSectionEditPatientField.resX">
+      <DependentUpon>frmSectionEditPatientField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectDatabase.resx">
+      <DependentUpon>frmSelectDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetupSelection.resx">
+      <DependentUpon>frmSetupSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetupStateVersion.resX">
+      <DependentUpon>frmSetupStateVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetupVersion.resX">
+      <DependentUpon>frmSetupVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetupVersionEdit.resX">
+      <DependentUpon>frmSetupVersionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubmissionAddCalcCrit.resX">
+      <DependentUpon>frmSubmissionAddCalcCrit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubmissionAddValidation.resX">
+      <DependentUpon>frmSubmissionAddValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubmissionColAdd.resX">
+      <DependentUpon>frmSubmissionColAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubmissionCopyCriteria.resX">
+      <DependentUpon>frmSubmissionCopyCriteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubmissionCopyCriteriaSet.resX">
+      <DependentUpon>frmSubmissionCopyCriteriaSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubmissionGroupAdd.resX">
+      <DependentUpon>frmSubmissionGroupAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubmissionRowAdd.resX">
+      <DependentUpon>frmSubmissionRowAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubmissionSetup.resX">
+      <DependentUpon>frmSubmissionSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubmissionUpdateValidation.resX">
+      <DependentUpon>frmSubmissionUpdateValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubmissionValidCritWizard.resX">
+      <DependentUpon>frmSubmissionValidCritWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableActionSetup.resX">
+      <DependentUpon>frmTableActionSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableEditField.resX">
+      <DependentUpon>frmTableEditField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableEditLookup.resX">
+      <DependentUpon>frmTableEditLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableFieldAdd.cs.resx">
+      <DependentUpon>frmTableFieldAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableFieldAdd.resX">
+      <DependentUpon>frmTableFieldAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableSetup.resX">
+      <DependentUpon>frmTableSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableValidationAddAction.resX">
+      <DependentUpon>frmTableValidationAddAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableValidationAddCrit.resX">
+      <DependentUpon>frmTableValidationAddCrit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableValidationAddMsg.resX">
+      <DependentUpon>frmTableValidationAddMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableValidationSetup.resx">
+      <DependentUpon>frmTableValidationSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableValidationUpdateMsg.resX">
+      <DependentUpon>frmTableValidationUpdateMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValidationCopyCriteria.resX">
+      <DependentUpon>frmValidationCopyCriteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValidationCopyCriteriaSet.resX">
+      <DependentUpon>frmValidationCopyCriteriaSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerifyTimingTest.resx">
+      <DependentUpon>frmVerifyTimingTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="bin\Debug\Cop2016.exe.config" />
+    <None Include="bin\Debug\Cop2016.vshost.exe.config" />
+    <None Include="Cop2016_TemporaryKey.pfx" />
+    <None Include="obj\x86\Debug\build.force" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+    <Content Include="lib\AxInterop.Microsoft.Vbe.Interop.Forms.dll" />
+    <Content Include="bin\Debug\Cop2016.vshost.exe" />
+    <Content Include="Cop2001.csproj" />
+    <Content Include="Cop_Log.txt" />
+    <Content Include="lib\Interop.ADODB.dll" />
+    <Content Include="lib\Interop.ADOR.dll" />
+    <Content Include="lib\Interop.DAO.dll" />
+    <Content Include="lib\Interop.MSDataGridLib.dll" />
+    <Content Include="lib\Interop.MSDBCtls.dll" />
+    <Content Include="lib\Interop.Scripting.dll" />
+    <Content Include="Logging\Cop_Log.txt" />
+    <Content Include="obj\x86\Debug\Cop2016.csproj.FileListAbsolute.txt" />
+    <Content Include="Pics\IHA Small Logo -Words.ico" />
+    <Content Include="Pics\iha-no_border.jpg" />
+    <Content Include="_UpgradeReport.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\x86\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="TelerikCommon">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="TelerikData">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
